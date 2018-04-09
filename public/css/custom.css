@@ -1,0 +1,162 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar,
+.navbar-default{
+    background-color: white;
+}
+
+.caption{
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:400;
+    text-align:center;
+}
+
+.sekus{
+    color:#86c72b;
+}
+
+.sekusBG{
+    color:#fff;
+    background-color:rgba(134, 199, 43, 1) !important;
+}
+
+.footer-title{
+    color:#3f3f3f;
+    line-height:30px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.footer{
+    padding-top:40px;
+    padding-bottom:40px;
+    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.footer a{
+    color:#888;
+    font-size:12px;
+    line-height:30px;
+    position:relative;
+    padding:10px 0px 0px 0px;
+    webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.footer a:hover{
+    padding-left:10px;
+    text-decoration:none;
+    color:#86c72b;
+}
+
+.login-signup-box {
+    float: right;
+    overflow: auto;
+}
+
+.font-bold{
+    font-weight: bolder;
+}
+
+.set-border-right {
+    border-right:1px solid #e5e5e5;
+}
+
+/* //////////////////////////*/
+
+.navbar-default .navbar-nav > li > a{
+    font-weight:bold;
+    font-size:16px;
+    color:rgb(76, 76, 76);
+}
+
+.navbar{
+    border-top:0;
+    border-bottom:1px solid #e9e9e9;
+    background-color:transparent;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    text-transform:uppercase;
+}
+
+.navbar .navbar-nav  a:hover{
+    text-decoration:underline;
+    color:#a3bc3d !important;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.center-container {
+    min-height: 375px;
+    max-height: fit-content;
+}
+
+.edit-btn {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    background: #fff;
+    padding: 10px;
+}
+
+.edit-btn > i {
+    font-size: 20px;
+    color: lightblue;
+}
+
+.edit-btn:hover {
+    background-color: lightblue;
+}
+
+.edit-btn:hover > i {
+    color: white;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    background: #fff;
+    padding: 10px;
+}
+
+.delete-btn > i {
+    font-size: 20px;
+    color: darkred;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.delete-btn:hover > i {
+    color: white;
+}
+
+.form-div {
+    display: none;
+}
+
+.m-10p {
+    margin-left: 12%;
+}
+
+.error-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    color: darkred;
+}
