@@ -10,13 +10,21 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// This part is also commented for a time being
+//Route::get('/', 'UsersController@index')->name('home');
+//Route::get('/posts', 'PostsController@index');
+//Route::get('/posts/create', 'PostsController@create');
+//Route::post('/posts', 'PostsController@store');
+//Route::get('/posts/{post}', 'PostsController@show');
+//Route::post('/posts/{post}/comments', 'CommentsController@store');
 
-Route::get('/', 'UsersController@index')->name('home');
-Route::get('/posts', 'PostsController@index');
-Route::get('/posts/create', 'PostsController@create');
-Route::post('/posts', 'PostsController@store');
-Route::get('/posts/{post}', 'PostsController@show');
-Route::post('/posts/{post}/comments', 'CommentsController@store');
+Auth::routes();
+Route::resource('users', 'UsersController');
+Route::get('/login', 'SessionsController@create')->name('login');
+Route::post('/login', 'SessionsController@store')->name('loginSession');
+Route::get('/register', 'RegistrationController@create')->name('register');
+Route::post('/register', 'RegistrationController@store')->name('reg_user');
+Route::get('/logout', 'SessionsController@destroy')->name('logout');
 
 //***Flow of resource routing***
 //Route::get('/users', 'UsersController@index');
@@ -27,11 +35,3 @@ Route::post('/posts/{post}/comments', 'CommentsController@store');
 //Route::get('/users/{user}/edit', 'UsersController@edit');
 //Route::get('/users/{user}/edit', 'UsersController@edit');
 //Route::delete('/users/{user}', 'UsersController@destroy');
-
-Auth::routes();
-Route::resource('users', 'UsersController');
-Route::get('/login', 'SessionsController@create')->name('login');
-Route::post('/login', 'SessionsController@store')->name('loginSession');
-Route::get('/register', 'RegistrationController@create')->name('register');
-Route::post('/register', 'RegistrationController@store')->name('reg_user');
-Route::get('/logout', 'SessionsController@destroy')->name('logout');

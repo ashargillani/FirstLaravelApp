@@ -29,7 +29,6 @@ class SessionsController extends Controller
                 'message' => 'Invalid Credentials/ Please try again'
             ]);
         }
-
         return redirect()->home();
     }
 }
