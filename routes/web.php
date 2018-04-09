@@ -11,13 +11,14 @@
 |
 */
 // This part is also commented for a time being
-//Route::get('/', 'UsersController@index')->name('home');
+
 //Route::get('/posts', 'PostsController@index');
 //Route::get('/posts/create', 'PostsController@create');
 //Route::post('/posts', 'PostsController@store');
 //Route::get('/posts/{post}', 'PostsController@show');
 //Route::post('/posts/{post}/comments', 'CommentsController@store');
 
+Route::get('/', 'UsersController@index')->name('home');
 Auth::routes();
 Route::resource('users', 'UsersController');
 Route::get('/login', 'SessionsController@create')->name('login');

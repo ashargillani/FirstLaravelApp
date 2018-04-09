@@ -38,9 +38,9 @@ class RegisterUser extends FormRequest
         }
 
         $rules = [
-            'name' => 'required',
-            'gender' => 'required',
-            'email' => 'required|email',
+            'name' => 'required|max:255',
+            'gender' => 'required|in:Male,Female',
+            'email' => 'required|string|max:255|unique:users|email',
             'dob' => 'required|before:'.$this->minimumDate.'|after:'.$this->maximumDate,
             'password' => 'required|confirmed|min:6'
         ];
